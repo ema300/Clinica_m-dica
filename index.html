@@ -12,9 +12,9 @@
      <nav>
         <ul id="menu">
           <li><a href="./index.html" >Inicio</a></li>
-          <li><a href="./index.html" >contenido</a></li>
-          <li><a href="./index.html" >contenido2</a></li>
-          <li><a href="./index.html">Contacto</a></li>
+          <li><a href="./registro.html" >Registrarse</a></li>
+          <li><a href="./index.html" >Contactenos</a></li>
+          <li ><a id="turno" href="./" >Solicitar Turno </a></li>
         </ul>
       </nav>
     
@@ -40,8 +40,33 @@
            </article>
     </section>
 
-     <aside><h2>Registrate</h2></aside> 
-     
+     <aside>
+        <form action="action_page.php" method="post" id="login">
+            <div class="imgcontainer">
+              <img src="Imágenes/descarga.png" alt="Avatar" class="avatar">
+            </div>
+          
+            <div class="container">
+              <label for="usuario"><b>Usuario</b></label>
+              <input type="text" placeholder="Ingrese su usuario" name="usuario" required>
+          
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Ingrese contraseña" name="psw" required>
+          
+              <button type="submit">Acceder</button>
+              <label>
+                <input type="checkbox" checked="checked" name="recordar_contraseña"> Recordar Contraseña
+              </label>
+            </div>
+          
+            <div class="container" >
+              <span class="psw">olvidaste tu <a href="#">contraseña?</a></span>
+            </div>
+          </form>
+    
+    
+    </aside> 
+  
      <footer>
 
   

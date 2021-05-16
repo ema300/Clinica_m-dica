@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="./Imágenes/favicon.png" />
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="./Estilos/index.css">
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+          <li><a href="./index.html" >Inicio</a></li>
+          <li><a href="./registro.html" >Registrarse</a></li>
+          <li><a href="./index.html" >Contactenos</a></li>
+          <li ><a id="turno" href="" >Solicitar Turno </a> </li>
+        </ul>
+      </nav>
+
+    <form action="#" target="" method="get" id="registro" name="formDatosPersonales"  onsubmit='return validar()'>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre " required/>
+    
+        <label for="apellidos">Apellido</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Apellido" required/>
+    
+        <label for="apellidos">Apellido opcional</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="2do Apellido opcional" required/>
+
+        
+        <label for='direccion'>Dirección*</label>
+        <input type='text' id='direccion' name='direccion'  placeholder="Calle" required/>
+
+        <label for="altura">Altura</label>
+        <input type="number" name="altura" id="altura"  min="1" max="9999" placeholder="****" required >
+
+        <br>
+        <label for='dni'>DNI</label>
+        <input type='text' id='dni' name='dni' maxlength="8" placeholder="DNI" required/>
+      
+        <label for="start">Fecha de Nacimiento:</label>
+       <input type="date" id="start" name="trip-start"
+        value="1995-07-19"
+        min="1900-01-01" max="-12-31" required>
+  <br><br>
+        <label for='edad'>Edad</label>
+        <input type="number" id="edad" name="edad"
+        min="1" max="130" placeholder="Edad" required>
+<br><br>
+        <label for='prestador'>Codertura médica</label>
+        <input type='text' id='prestador' name='prestador'  placeholder="Prestador" required/>
+
+        <label for='plan_medico'>Plan Médico</label>
+        <input type='text' id='plan_medico' name='plan_medico'  placeholder="Plan Médico" required/>
+
+        <label for="email" >Email</label>
+        <input type="email" name="email" id="email" placeholder="E-mail" required />  
+<br><br>       
+        <label for='sexo'>Sexo</label>
+        <select id='sexo' name='sexo' required>
+        <option value=''>Seleccione</option>
+        <option>Masculino</option> 
+        <option>Femenino</option>
+        </select>
+        </label>
+  <br><br>
+        <label >    
+        <input type='checkbox' value='SI' id='acepto' required/>
+        He leído y acepto las condiciones;
+        </label>  
+        <input type="submit" name="enviar" value="Enviar Formulario"/>
+    </form>
+
+        
+</body>
+</html>
