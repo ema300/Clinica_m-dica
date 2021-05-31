@@ -10,7 +10,7 @@ body {
 header{ 
     height: 100%;
     width: 100%; 
-    background-color:rgb(6, 22, 100);   
+    background-color:rgb(33, 143, 143);   
 } 
 header h1 {
   font-size:2em;
@@ -63,7 +63,7 @@ ul{
 #contenido{ 
     width: 90%; 
     height: 90%; 
-    background-color: rgb(3, 3, 59);  
+    background-color: rgba(36, 75, 45, 0.575);  
     padding: 1em; 
   
 } 
