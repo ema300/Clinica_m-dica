@@ -1,99 +1,96 @@
 *{ 
-    margin: 0px; 
-    padding: 0%; 
+    margin: 0; 
+    padding: 0; 
 } 
-body{ 
-    background-color: rgb(35, 130, 240); 
-    color: rgb(255, 255, 255); 
-} 
-#contenedor{ 
-    max-width: 1100px; 
-    margin: auto; 
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-   
-} 
+body {
+  background-color: rgb(98 129 216 / 54%);
+  color: rgb(255, 255, 255);
+}
+
 header{ 
-    height: 100px; 
+    height: 100%;
+    width: 100%; 
     background-color:rgb(6, 22, 100);   
 } 
-header h1{ 
-    font-size: 50px; 
-    text-align: center; 
-    line-height: 100px; 
-} 
-nav{ 
-    background-color:rgb(20, 121, 214); 
-    height: 50px; 
-    margin-top: 5px; 
-    margin-bottom: 5px; 
-} 
+header h1 {
+  font-size:2em;
+  text-align: center;
+  line-height: 2em;
+}
 
+
+nav {
+  background-color: rgba(20, 120, 214, 0);
+  height: 5em;
+  
+  
+}
+@media screen and (max-width: 650px){
+  nav {
+    margin-block-end: 60%;  
+  }
+}
 ul{
     list-style: none;
+    text-align: center;
+    margin: 1em;
   }
-  #menu li a{
-    height: 20px; 
-  
-    background-color: rgb(19, 6, 51);
-    color: white;
-    padding: 10px;
+  #menu li a {
+    height: 2em;
+    background-color: rgb(24 22 31);
+    color: rgb(222 214 253);
+    padding: 0.5em;
     display: block;
     text-decoration: none;
-    min-width: 100px;
-    font-family: Arial; 
-    float: none;
-
-  }
+    min-width: 8em;
+    font-family: Arial;
+    
+   
+   
+}
   #menu li a:hover{
     color: #000;
     background-color: #eaeaea;
   }
   #menu li{
-    float: left;
+    display: inline-block;
+    margin-inline: -2px;
     text-align:center
   }
-  #menu li ul{
-    display: none;
-  }
-  #menu li:hover ul {
-    display:flex;
-  }
+ 
+ 
 
 #contenido{ 
-    width: 700px; 
-    height: 800px; 
-    float: left; 
-    background-color: rgb(3, 3, 59); 
-    margin-top: 10px; 
-    margin-right: 10px; 
-    margin-bottom: 10px; 
-} 
-article {
-    margin: 10px;
-}
-#contenido h2{ 
-    font-size: 30px; 
-    text-align: center; 
-    line-height: 500px; 
+    width: 90%; 
+    height: 90%; 
+    background-color: rgb(3, 3, 59);  
+    padding: 1em; 
+  
 } 
 
+img{
+  width: 90%;
 
-#turno  {
-     background-color: brown;
-     
+  height: 90%;
 }
+
 
 /* aside */
-aside{ 
-    width: 270px; 
-    height: 500px; 
-    background-color:rgb(16, 79, 151); 
-    margin-top: 10px; 
-    float: right; 
-} 
+#login {
+  
+  box-sizing: border-box;
+  width: 18em;
+  padding: 3em;
+  border-radius: 10px;
 
-  aside input[type=text], input[type=password] {
+  margin: 3em auto;
+  background-color: #092f08a3;
+  color: rgb(193 193 193);
+
+}
+
+
+#login input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -102,7 +99,7 @@ aside{
     box-sizing: border-box;
   }
 
-  aside button {
+  #login button {
     background-color: #882608;
     color: white;
     padding: 14px 20px;
@@ -112,18 +109,18 @@ aside{
     width: 100%;
   }
  
- aside  button:hover {
+  #login  button:hover {
     opacity: 0.8;
   }
   
 
-  aside .imgcontainer {
+  #login .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
   }
   
   /* Avatar imagen */
-  aside img.avatar {
+  #login img.avatar {
     width: 40%;
     border-radius: 50%;
   }
@@ -146,33 +143,25 @@ aside{
     text-decoration: underline;
 }
 /* footer */
-footer{ 
-    
-    clear: both;
-    background-color: rgb(7, 29, 85); 
-   
-}
-.siguenos{
-    margin: 10px;
-    text-align: left;
-}
 
-.copyright{  
-    text-align: right; 
+.copyright {
+  text-align: right;
+  color: rgb(0 0 0 / 60%);
 }
 /* Registro */
 
 
 
 
-#registro{
-  box-sizing:border-box;
-	width:300px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-	background-color:#ccc;
-  color: rgb(45, 52, 58);
+#registro {
+  box-sizing: border-box;
+  width: 18em;
+  padding: 3em;
+  border-radius: 10px;
+  /* margin-top: 3em; */
+  margin:   auto;
+  background-color: #092f08a3;
+  color: rgb(193 193 193);
 }
 #registro label{
 	width:72px;
@@ -190,16 +179,16 @@ footer{
 	margin:8px 0;
 	display:inline-block;
 }
-#registro input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color:#000;
-} 
+#registro input[type="submit"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #092f08;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+}
 
 #registro input[type="submit"]:hover{
 	cursor:pointer;
