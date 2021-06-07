@@ -27,7 +27,7 @@ nav {
 }
 @media screen and (max-width: 650px){
   nav {
-    margin-block-end: 60%;  
+    margin-block-end: 80%;  
   }
 }
 ul{
@@ -39,7 +39,7 @@ ul{
     height: 2em;
     background-color: rgb(24 22 31);
     color: rgb(222 214 253);
-    padding: 0.5em;
+    padding: 1em;
     display: block;
     text-decoration: none;
     min-width: 8em;

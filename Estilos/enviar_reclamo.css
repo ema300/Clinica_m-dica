@@ -8,7 +8,7 @@ body {
 }
 
 .form_wrap{ 
-    width: 1050px; 
+    width: 90%; 
     height: 530px; 
     margin: 50px auto; 
     display: flex; 
@@ -56,7 +56,7 @@ form.form_contact input[type="submit"]{
  border: none; 
  border-radius: 25px; 
  
-    align-self: flex-end; 
+ 
  
     color: #fff; 
  font-family: 'Open sans'; 
@@ -69,14 +69,16 @@ form.form_contact input[type="submit"]:hover{
     background: #3371B6; 
 } 
 
+
 form.form_contact input, form.form_contact textarea {
     width: 100%;
     padding: 8px 10px 5px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     border: none;
     border-bottom: 2px solid #D1D1D1;
     font-family: 'Open sans';
     color: #5A5A5A;
-    font-size: 8 em;
-    font-weight: 400;
+    
+   
 }
