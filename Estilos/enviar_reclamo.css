@@ -32,7 +32,7 @@ form.form_contact h2 {
     color: #868686;
     margin-bottom: 30px;
 }
-form.form_contact .user_info{ 
+form.form_contact { 
     display: flex; 
     flex-direction: column; 
 } 
@@ -49,7 +49,7 @@ form.form_contact textarea{
     max-height: 90px; 
 } 
  
-form.form_contact input[type="submit"]{ 
+form.form_contact input[type="button"]{ 
     width: 180px; 
  background: #4091EC; 
  padding: 10px; 
@@ -65,7 +65,7 @@ form.form_contact input[type="submit"]{
  cursor: pointer; 
 } 
  
-form.form_contact input[type="submit"]:hover{ 
+form.form_contact input[type="button"]:hover{ 
     background: #3371B6; 
 } 
 
