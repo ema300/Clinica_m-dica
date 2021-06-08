@@ -3,14 +3,14 @@
 
 var usuarios = [
     {
-        "usuario": 'admistrativo300',
-        "contraseña": 'administrativo300',
+        "usuario": 'Administrativo300',
+        "contraseña": 'Administrativo300',
         "rol": 'administrativo'
     },
 
     {
-        "usuario": 'paciente300',
-        "contraseña": 'paciente300',
+        "usuario": 'Paciente300',
+        "contraseña": 'Paciente300',
         "rol": 'paciente'
     },
 ];
@@ -91,3 +91,18 @@ function enviarReclamo() {  // dependiendo si es administrativo o paciente inici
         alert("Mensaje enviado");
     }
 }
+
+//////////////////////////////////////////////////////////////////7
+
+
+function validar() {
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var usuario = document.getElementById("usuario").value;
+    var contraseña = document.getElementById("contraseña").value;
+    if (nombre == "" || apellido == "" || usuario == "" || contraseña == "") {
+        alert("Aun faltan completar campos"); 
+    } else {
+    alert("Registro exitoso");
+    }
+  }
