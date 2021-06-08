@@ -14,10 +14,10 @@
     <nav>
         <ul id="menu">
           <li><a href="./index.html" >Inicio</a></li>
-          <li><a href="./registro.html" >Registrarse</a></li>
+          <!--<li><a href="./registro.html" >Registrarse</a></li>-->
           <li><a href="./index.html" >Contactenos</a></li>
-          <li ><a href="./login.html" >Solicitar Turno </a> </li>
-          <li ><a href="./login.html" >Inicio Sesión </a> </li>
+          <!--<li ><a href="./login.html" >Solicitar Turno </a> </li>-->
+          <!--<li ><a href="./login.html" >Inicio Sesión </a> </li>-->
         </ul>
       </nav>
     <form action="#" target="" method="get" id="registro" name="formDatosPersonales"   >
@@ -30,13 +30,13 @@
         <input type="text" name="apellido" id="apellido" maxlength="20" placeholder="Apellido"required/>
 
         <label for="usuario">Usuario</label>
-        <input type="text"  maxlength="20" name="usuario" id="usuario" placeholder="Nombre Usuario" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" 
-        title="El Usuario debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
+        <input type="text"  maxlength="20" name="usuario" id="usuario" placeholder="Nombre Usuario" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,20}$" 
+        title="El Usuario debe tener entre 8 y 20 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
         NO puede tener otros símbolos." />
 
         <label for="contraseña">Contraseña</label>
-        <input type="text" maxlength="20"name="contraseña" id="contraseña" placeholder="Contraseña" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" 
-        title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
+        <input type="text" maxlength="20"name="contraseña" id="contraseña" placeholder="Contraseña" required pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,20}$" 
+        title="La contraseña debe tener al entre 8 y 20 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
         NO puede tener otros símbolos."/>
     
         <label for='direccion'>Dirección*</label>
@@ -48,7 +48,7 @@
         <br>
         <label for='dni'>DNI</label>
         <input type='text' id='dni' name='dni' maxlength="8" placeholder="DNI"  pattern="[0-9]{8}"
-        title="El número debe ser numerico de 8 digitos." />
+        title="El DNI debe ser un número de 8 dígitos." />
       
         <label for="start">Fecha de Nacimiento:</label>
        <input type="date" id="start" name="trip-start"

@@ -69,10 +69,10 @@ else {
     if (intent_act < 5) {
         localStorage.setItem("intentos", intent_act++);
         localStorage.setItem("usuario",usuarioEncontrado );
-        alert("contraseña invalida")
+        alert("usuario y/o contraseña inválida")
     }
     if (intent_act === 5) {
-        alert("usuario bloqueado")
+        alert("Intente de nuevo más tarde")
     }
 }
 
@@ -80,7 +80,7 @@ else {
 }
 
 ////////////////////////////FUNCIONES /////////////////////////////////////
-function enviarReclamo() {  // dependiendo si es administrativo o paciente iniciara sesion diferente
+function enviarReclamo() {  // dependiendo si es administrativo o paciente iniciará sesión diferente
     var campo = $('#mensaje').val();
 
 
